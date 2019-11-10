@@ -1,0 +1,338 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Introduction to APIs</title>
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body style="background-color:#000;">
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+	<br>
+	<h3>API Life Cycle - Introduction</h3>
+	<img src="../../img/consumers.png" width="550" align="center" style="border: 0px;background-color:#000">
+	<p>
+	<small>@getpostman</small>
+	</p>
+</section>
+		<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>What Is An API?</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-question-mark.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">How Applications Communicate</li><li style="font-size: 28px;">The Next Evolution of the Web</li><li style="font-size: 28px;">Used To Reach Multiple Channels</li><li style="font-size: 28px;">Access To Data, Content, and Algorithms</li><li style="font-size: 28px;">Not Just For Developers</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Uses</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-gear-life-cycle.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Desktop Applications</li><li style="font-size: 28px;">Web Applications</li><li style="font-size: 28px;">Mobile Applications</li><li style="font-size: 28px;">SaaS Integrations</li><li style="font-size: 28px;">Spreadsheets</li><li style="font-size: 28px;">Connected Devices</li><li style="font-size: 28px;">Automobiles</li><li style="font-size: 28px;">Network</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>History</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-history.jpeg" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Commerce</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-shopping-cart.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">SaleForce</li><li style="font-size: 28px;">eBay</li><li style="font-size: 28px;">Amazon</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Social</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-social-network.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Delicious</li><li style="font-size: 28px;">Flickr</li><li style="font-size: 28px;">Facebook</li><li style="font-size: 28px;">Twitter</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Cloud</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-data-engine-cloud.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Amazon Simple Storage (S3)</li><li style="font-size: 28px;">Amazon Elastic Compute (EC2)</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Mobile</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-mms.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Google Maps</li><li style="font-size: 28px;">Foursquare</li><li style="font-size: 28px;">Instagram</li><li style="font-size: 28px;">Twilio</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Devices</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-device-data.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">FitBit</li><li style="font-size: 28px;">Nest</li><li style="font-size: 28px;">Alexa</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>The Journey</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/undefined/bw-journey.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Why APIs?</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-exclamation-circle.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Data Access</li><li style="font-size: 28px;">SaaS Integrations</li><li style="font-size: 28px;">Increased Internal Agility</li><li style="font-size: 28px;">Strengthen External Relationships</li><li style="font-size: 28px;">API Stakeholder</li><li style="font-size: 28px;">Defining Capabilities</li><li style="font-size: 28px;">Events & Signals</li><li style="font-size: 28px;">Developer Engagement</li><li style="font-size: 28px;">Tuned Into Details</li><li style="font-size: 28px;">API Contracts</li><li style="font-size: 28px;">Governance</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Getting Started</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-rocket.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Consuming</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-gear-life-cycle.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Discover New APIs</li><li style="font-size: 28px;">Play With APIs</li><li style="font-size: 28px;">Build With APIs</li><li style="font-size: 28px;">Help Improve APIs</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Integration</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-integration-automation.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Discover New APIs</li><li style="font-size: 28px;">Platforms</li><li style="font-size: 28px;">Workflow Orchestration</li><li style="font-size: 28px;">Knowing What Is Possible</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Data Steward</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-obsess-data.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Spreadsheets</li><li style="font-size: 28px;">CSV & JSON</li><li style="font-size: 28px;">Publish Data APIs</li><li style="font-size: 28px;">Maintain Quality</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Providers</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-provider.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Know Your APIs</li><li style="font-size: 28px;">Know Your APIs</li><li style="font-size: 28px;">Know Your Teams</li><li style="font-size: 28px;">Know Your Stakeholders</li><li style="font-size: 28px;">Know Your Applications</li><li style="font-size: 28px;">Know Your Capabilities</li><li style="font-size: 28px;">Define Your Lifecycle</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Evangelism</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-evangelism.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Discover New APIs</li><li style="font-size: 28px;">Play With APIs</li><li style="font-size: 28px;">Tell Stories of APIs</li><li style="font-size: 28px;">Shine A Light On People</li><li style="font-size: 28px;">Develop Relationships</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Business</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-business-chart.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Awareness</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-awareness.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Shared Voice</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-common-sense.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Capabilities</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-information-gear.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+
+
+			<section>
+			  <br>
+			  <h3>The API Life Cycle</h3>
+			  <img src="../../img/integrations_postmanaut_4.png" width="550" align="center">
+			  <p>
+			    <small>@getpostman</small>
+			  </p>
+			</section>
+
+			</div>
+		</div>
+
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: '../plugin/markdown/marked.js' },
+					{ src: '../plugin/markdown/markdown.js' },
+					{ src: '../plugin/notes/notes.js', async: true },
+					{ src: '../plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

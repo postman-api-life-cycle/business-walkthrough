@@ -1,0 +1,336 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>API First</title>
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body style="background-color:#000;">
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+	<br>
+	<h3>API Life Cycle - API First</h3>
+	<img src="../../img/consumers.png" width="550" align="center" style="border: 0px;background-color:#000">
+	<p>
+	<small>@getpostman</small>
+	</p>
+</section>
+		<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Organization</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-organization.jpg" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Teams</li><li style="font-size: 28px;">Workspaces</li><li style="font-size: 28px;">Repositories</li><li style="font-size: 28px;">Domains</li><li style="font-size: 28px;">Workflows</li><li style="font-size: 28px;">Syncing</li><li style="font-size: 28px;">Tags</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Definition</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://kinlane-productions.s3.amazonaws.com/api-lifecycle/specifications.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Service Name</li><li style="font-size: 28px;">Service Description</li><li style="font-size: 28px;">Schema</li><li style="font-size: 28px;">OpenAPI</li><li style="font-size: 28px;">Postman Collections</li><li style="font-size: 28px;">Postman Environments</li><li style="font-size: 28px;">AsyncAPI</li><li style="font-size: 28px;">Assertions</li><li style="font-size: 28px;">README</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Environments</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-software.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Variables</li><li style="font-size: 28px;">Variable Scopes</li><li style="font-size: 28px;">Dynamic Variables</li><li style="font-size: 28px;">Sharing</li><li style="font-size: 28px;">Import</li><li style="font-size: 28px;">Export</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>HTTP APIs</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-design.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Base Path</li><li style="font-size: 28px;">Path(s)</li><li style="font-size: 28px;">Verb(s)</li><li style="font-size: 28px;">Parameters</li><li style="font-size: 28px;">Headers</li><li style="font-size: 28px;">Body</li><li style="font-size: 28px;">Actions</li><li style="font-size: 28px;">Media Types</li><li style="font-size: 28px;">Status Codes</li><li style="font-size: 28px;">Filtering</li><li style="font-size: 28px;">Pagination</li><li style="font-size: 28px;">Sorting</li><li style="font-size: 28px;">Response(s)</li><li style="font-size: 28px;">Errors</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Event-Driven</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-events.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Webhooks</li><li style="font-size: 28px;">Channels</li><li style="font-size: 28px;">Operations</li><li style="font-size: 28px;">Messages</li><li style="font-size: 28px;">Tags</li><li style="font-size: 28px;">Schema</li><li style="font-size: 28px;">Parameters</li><li style="font-size: 28px;">Examples</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>GraphQL</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://kinlane-productions.s3.amazonaws.com/bw-icons/bw-graphql.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Fields</li><li style="font-size: 28px;">Arguments</li><li style="font-size: 28px;">Aliases</li><li style="font-size: 28px;">Fragments</li><li style="font-size: 28px;">Operations</li><li style="font-size: 28px;">Variables</li><li style="font-size: 28px;">Directives</li><li style="font-size: 28px;">Mutations</li><li style="font-size: 28px;">Type</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>gRPC</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-grpc.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Service Definition</li><li style="font-size: 28px;">Protocol Buffers</li><li style="font-size: 28px;">Synchronous & Asynchronous</li><li style="font-size: 28px;">Channels</li><li style="font-size: 28px;">Error Model</li><li style="font-size: 28px;">Deadlines & Timeouts</li><li style="font-size: 28px;">Metadata</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Versioning</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-version.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Major</li><li style="font-size: 28px;">Minor</li><li style="font-size: 28px;">Patch</li><li style="font-size: 28px;">Control</li><li style="font-size: 28px;">Forking</li><li style="font-size: 28px;">Pulling</li><li style="font-size: 28px;">Merging</li><li style="font-size: 28px;">Conflicts</li><li style="font-size: 28px;">Road Map</li><li style="font-size: 28px;">Communication</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Mocking</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-mock-interface.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Paths</li><li style="font-size: 28px;">Data</li><li style="font-size: 28px;">Matching</li><li style="font-size: 28px;">Sandbox</li><li style="font-size: 28px;">Portability</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Testing</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-testing.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Pre-Request Script</li><li style="font-size: 28px;">Post-Request Script</li><li style="font-size: 28px;">Chaining</li><li style="font-size: 28px;">Branching</li><li style="font-size: 28px;">Looping</li><li style="font-size: 28px;">Saved Requests</li><li style="font-size: 28px;">Playback</li><li style="font-size: 28px;">Archived Results</li><li style="font-size: 28px;">Reporting</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Landing Page</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-portal-developers.jpg" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Hosting</li><li style="font-size: 28px;">Template</li><li style="font-size: 28px;">Discovery</li><li style="font-size: 28px;">Workspaces</li><li style="font-size: 28px;">Teams</li><li style="font-size: 28px;">Developers</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Documentation</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-documentation-interactive.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Paths</li><li style="font-size: 28px;">Schema</li><li style="font-size: 28px;">Examples</li><li style="font-size: 28px;">Definitions</li><li style="font-size: 28px;">Errors</li><li style="font-size: 28px;">Markdown</li><li style="font-size: 28px;">Private</li><li style="font-size: 28px;">Public</li><li style="font-size: 28px;">Domains</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Client</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-client.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">HTTP 1.1 Requests</li><li style="font-size: 28px;">HTTP 1.1 Responses</li><li style="font-size: 28px;">GraphQL Requests</li><li style="font-size: 28px;">SOAP Requests</li><li style="font-size: 28px;">Tabs</li><li style="font-size: 28px;">History</li><li style="font-size: 28px;">Debugging</li><li style="font-size: 28px;">Console Logs</li><li style="font-size: 28px;">Authentication</li><li style="font-size: 28px;">SSO</li><li style="font-size: 28px;">Static IPs</li><li style="font-size: 28px;">Cookies</li><li style="font-size: 28px;">Certificates</li><li style="font-size: 28px;">Capturing Requests</li><li style="font-size: 28px;">Visualizations</li><li style="font-size: 28px;">Keyboard Shortcuts</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Support</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-support.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Email</li><li style="font-size: 28px;">Issues</li><li style="font-size: 28px;">Tickets</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Communication</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-communication.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Blog</li><li style="font-size: 28px;">Internal</li><li style="font-size: 28px;">External</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Road Map</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-roadmap.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Private</li><li style="font-size: 28px;">Public</li><li style="font-size: 28px;">Suggest</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Discovery</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-discovery.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Catalog</li><li style="font-size: 28px;">Workspaces</li><li style="font-size: 28px;">API.json</li><li style="font-size: 28px;">OpenAPI</li><li style="font-size: 28px;">Postman Collection</li><li style="font-size: 28px;">Postman Environments</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+				<section data-background="https://kinlane-productions.s3.amazonaws.com/postman/blog-meta-image.png">
+			<div style="background-color:#000; padding: 10px;border-radius: 25px;">
+			<h3>Training</h3>
+			<table style="">
+				<tr>
+					<td valign="top" align="center" style="padding: 5px;">
+						<img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-training.png" width="250" style="border-radius: 25px; padding: 15px; background-color:#FFF;">					</td>
+										<td style="vertical-align: top; padding-top: 5px;">
+						<ul>
+						<li style="font-size: 28px;">Workshops</li><li style="font-size: 28px;">Webinars</li><li style="font-size: 28px;">Tutorials</li><li style="font-size: 28px;">In-Person</li><li style="font-size: 28px;">Self-Service</li><li style="font-size: 28px;">Ongoing</li>						</ul>
+					</td>
+									</tr>
+			</table>
+			</div>
+		</section>
+
+
+			<section>
+			  <br>
+			  <h3>The API Life Cycle</h3>
+			  <img src="../../img/integrations_postmanaut_4.png" width="550" align="center">
+			  <p>
+			    <small>@getpostman</small>
+			  </p>
+			</section>
+
+			</div>
+		</div>
+
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: '../plugin/markdown/marked.js' },
+					{ src: '../plugin/markdown/markdown.js' },
+					{ src: '../plugin/notes/notes.js', async: true },
+					{ src: '../plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
